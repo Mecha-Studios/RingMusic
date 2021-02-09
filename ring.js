@@ -11,11 +11,10 @@ console.log("RingMusic Version:" + version);
 versiontext.innerHTML+= version;
 
 
-function playSong(songname, songduration){
+function playSong(songname){
     var playsong  = new Audio('songs/' + songname + '.mp3');
     playsong.pause();
     songnametxt.innerHTML = songname;
-    songtimetxt.innerHTML = songduration;
     playsong.play();
     function togglePlay() {
         isPlaying ? playsong.pause() : playsong.play();
@@ -32,4 +31,5 @@ function playSong(songname, songduration){
 
     document.title = songname;
     playbutt.onclick = function(){togglePlay();};
+    
 }

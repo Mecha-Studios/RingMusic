@@ -136,7 +136,7 @@ a {
 
 .songlisting{
     width: 95%;
-    height: 100px;
+    height: 80px;
     margin: 10px;
     top: 10%;
     left: 15%;
@@ -145,13 +145,19 @@ a {
     box-shadow: rgba(255, 255, 255, 0.5) 5px 5px 5px;
     text-align: center;
     border-radius: 15px;
-    display: flex;
+    display: inline-flex;
 } .songlisting:hover{
     background: linear-gradient(red,rgb(66, 66, 66));
     color: white;
     text-shadow: rgba(0, 0, 0, 1) 2px 2px;
     box-shadow: rgba(255, 0, 0, 0.75) 2.5px 2.5px 2.5px 2.5px; 
     transform: translateX(20px);
+} .songlisting h1{
+    width: 95%;
+    height: 60px;
+    text-align: center;
+    margin: 0;
+    font-size: 40px;
 }
 
 object{
